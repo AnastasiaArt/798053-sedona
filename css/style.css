@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+.site-navigation  {
+  list-style: none;
+}
+.site-navigation a {
+  color: #000000;
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+.site-navigation a:active {
+  opacity: 0.3;
+  color: #000000;
+}
+.site-navigation-current {
+  color: #766357;
+}
+
+.about-Sedona h1 {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+.about-Sedona p {
+  line-height: 26px;
+  text-align: center;
+}
+.features-list {
+  list-style: none;
+}
+.features-item {
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.features-item .feature-text {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.features-text h2 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.features-item>h2,
+.recommend-item h3  {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.recommend-list {
+  list-style: none;
+}
+.recommend-item {
+  text-align: center;
+}
+.search-hotels {
+  line-height: 24px;
+  text-align: center;
+}
+.search-hotels h2 {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+}
+button {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+}
+.popupsearch
+{
+  background-color: #766357;
+}
+.search {
+  background-color: #81b3d2;
+}
+.popupsearch:hover,
+.popupsearch:focus {
+  background-color: #604e43;
+}
+.popupsearch:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+.search:hover,
+.search:focus {
+  background-color: #669ec0;
+}
+.search:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+.search-hotels-item {
+  color: #000000;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.search-hotels-item input {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+}
+.search-hotels-item input:hover {
+  background-color: #ebebeb;
+}
+.search-hotels-item input:focus {
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+.main-footer {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.main-footer p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.footer-social {
+  text-align: center;
+  background-color: #81b3d2;
+}
+.footer-social ul {
+  list-style: none;
+}
+.social-button {
+  color: #ffffff;
+}
+.footer-copyright .button:hover {
+    background-color: #81b3d2;
+}
+.footer-copyright .button:focus {
+  background-color: #bdbbbc;
+}
+.filters-form {
+  font: inherit;
+  color: #ffffff;
+  background-color: #355061;
+  background-image: url("img/backgroundSedona.jpg");
+}
+.filters-form  legend {
+  font-size: 16px;
+  font-weight: 700;
+}
