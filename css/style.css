@@ -133,6 +133,7 @@ button {
   font: inherit;
   background-color: #f2f2f2;
   border: none;
+  background-color: transparent;
 }
 .search-hotels-item input:hover {
   background-color: #ebebeb;
@@ -173,8 +174,7 @@ button {
   font: inherit;
   color: #ffffff;
   background-color: #355061;
-  background-image: url("img/backgroundSedona.jpg");
-  background-position: top center;
+  background-image: url("../img/backgroundSedona.jpg");
   background-repeat: no-repeat;
 }
 .filters-form  legend {
@@ -183,4 +183,58 @@ button {
 }
 .filters-form ul {
   list-style: none;
+}
+.filters-form fieldset {
+  border: none;
+}
+.filter-price label {
+  border: 2px solid #ffffff;
+}
+.filter-button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+}
+.filter-button:hover,
+.filter-button:focus {
+  color:#000000;
+  background-color:#ffffff;
+}
+.catalog-sort {
+  font-size: 12px;
+  line-height: 18px;
+}
+.catalog-sort-sum {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.catalog-sort h2 {
+  color:#000000;
+
+}
+
+.sort-list {
+  list-style: none;
+}
+.sort-item a {
+  opacity: 0.3;
+  color: #000000;
+  border-bottom: 1px dotted #81b3d2;
+}
+.sort-item a:hover {
+  color: #81b3d2;
+}
+.sort-item a:focus {
+  color: #81b3d2;
+  border-bottom: 0;
+}
+.sort-item a:active {
+  border-bottom: 0;
+  color: #000000;
+  opacity: 1;
 }
