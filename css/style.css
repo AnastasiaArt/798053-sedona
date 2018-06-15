@@ -238,3 +238,45 @@ button {
   color: #000000;
   opacity: 1;
 }
+.catalog-list {
+    list-style: none;
+}
+.hotel-card h3 a{
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.button-info,
+.button-book {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+}
+.button-info {
+  background-color: #81b3d2;
+}
+.button-info:hover,
+.button-info:focus {
+  background-color: #669ec0;
+}
+.button-info:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+.button-book {
+  background-color: #766357;
+}
+.button-book:hover,
+.button-book:focus {
+  background-color: #604e43;
+}
+.button-book:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
