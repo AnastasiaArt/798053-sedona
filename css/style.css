@@ -169,13 +169,18 @@ button {
 .footer-copyright .button:focus {
   background-color: #bdbbbc;
 }
-.filters-form {
+.filter {
   font: inherit;
   color: #ffffff;
   background-color: #355061;
   background-image: url("img/backgroundSedona.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 .filters-form  legend {
   font-size: 16px;
   font-weight: 700;
+}
+.filters-form ul {
+  list-style: none;
 }
