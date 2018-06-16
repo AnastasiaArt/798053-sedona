@@ -8,7 +8,7 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
-
+  text-align: center;
   background-color: #ffffff;
 }
 a {
@@ -53,10 +53,11 @@ a {
 }
 .features-list {
   list-style: none;
-}
-.features-item {
-  text-align: center;
   background-color: #eeeeee;
+}
+.feature-item {
+  text-align: center;
+
 }
 
  .feature-text {
@@ -314,11 +315,9 @@ a {
 
 .main-image {
     padding: 0;
-    margin: 0 auto;
     margin-bottom: 57px;
 }
 .about-sedona {
-  margin: 0 auto;
   padding: 0 10px;
 }
 .about-sedona h2 {
@@ -331,20 +330,19 @@ a {
   padding: :0;
   margin-bottom: 55px;
 }
-.features-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-}
 .recommend-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
 }
-
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 57px;
+}
 .search-hotels {
   margin: 0 auto;
   padding: 0 10px;
@@ -366,8 +364,10 @@ a {
   height: 86px;
   margin: 0 auto;
 }
-.search-hotels-form {}
-
+.search-hotels-form {
+  
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
 .main-footer {
   display: flex;
   justify-content: space-between;
