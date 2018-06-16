@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-
+  width: 100%;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -284,40 +284,34 @@ a {
   background-color: #503e33;
 }
 /*сеточные стили*/
-html,
-body {
-  min-width: 768px;
+.body-container {
+  margin:0 auto;
   max-width: 1200px;
-  margin: 0 auto;
+  min-width: 768px;
 }
 .main-header {
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0 10px;
-  margin:0 auto;
-  margin-bottom:0px;
-  align-items: center;
-  width: 100%;
-
+ position: relative;
 }
 .main-header-logo {
-  order:1;
   width: 138px;
   height: 70px;
-  flex:1;
-}
-.main-navigation {
-  order:0;
-  flex:1.25;
 
 }
 .site-navigation {
   display: flex;
   justify-content: space-between;
-  margin: 0;
-  padding: 0;
+  padding: 0 10px;
 }
+.site-navigation li {
+  width:20%;
+  }
+.site-navigation li:nth-child(2) {
+   margin-right: auto;
+}
+.site-navigation li:nth-child(3){
+   margin-left: auto;
+}
+
 .main-image {
     padding: 0;
     margin: 0 auto;
@@ -350,7 +344,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/*для основного содержаия*/
+
 .search-hotels {
   margin: 0 auto;
   padding: 0 10px;
