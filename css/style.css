@@ -81,7 +81,7 @@ input[type="radio"].visually-hidden {
 
 }
 
- .feature-text {
+.feature-text {
   color: #ffffff;
   background-color: #81b3d2;
   text-align: center;
@@ -178,16 +178,11 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   line-height: 26px;
 }
-.footer-social {
-  text-align: center;
-  background-color: #81b3d2;
-}
+
 .footer-social ul {
   list-style: none;
 }
-.social-button {
-  color: #ffffff;
-}
+
 .footer-copyright .button:hover {
     background-color: #81b3d2;
 }
@@ -267,7 +262,7 @@ input[type="radio"].visually-hidden {
 .catalog-list {
     list-style: none;
 }
-.hotel-card h3 a{
+.hotel-card h3 a {
   color: #000000;
   font-size: 21px;
   font-weight: 700;
@@ -354,8 +349,8 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 57px;
   position: relative;
-  height: :512px;
-
+  max-height: 512px;
+  overflow: hidden;
 }
 
 .main-image img {
@@ -364,8 +359,8 @@ input[type="radio"].visually-hidden {
 .main-image::after {
   content: "";
   position: absolute;
-  bottom:1%;
-  left:60%;
+  bottom:0;
+  left:50%;
   transform: translate(-50%, 0%);
   width: 100%;
   height:57px;
@@ -432,16 +427,22 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-top: 50px;
-  margin-bottom: 57px;
+  margin-bottom: 54px;
+  align-items: center;
+  height: 256px;
 }
 .feature-item {
   width: 33%;
+  padding: 0 60px;
+  margin-top: 50px;
 }
 .feature-item h2 {
   width: 50%;
   margin:0 auto;
-
+  margin-bottom: 26px;
+}
+.feature-item p {
+  margin:26px auto;
 }
 .search-hotels {
   margin: 0 auto;
@@ -480,23 +481,51 @@ padding: 45px 60px;
 padding-top: 30px;
   margin: 0;
 }
-
 .popupsearch {
-  margin: 0;
-  padding: 0;
+  display: inline-block;
   width: 568px;
-  height: 86px;
-  margin: 0 auto;
+  padding-top: 35px;
+  padding-bottom: 33px;
 }
-.search-hotels-form {
 
+.search-hotels-form {
+  width: 568px;
+  height: 395px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  margin: 0 auto;
 }
 .main-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 120px;
   padding: 0 10px;
   margin: 0;
+}
+.social-button {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social ul {
+  display: flex;
+  width: 150px;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding:0;
+}
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+.social-button:active {
+  background-color: #5496bd;
+}
+.social-button:active path {
+  opacity: 0.3;
 }
