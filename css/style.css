@@ -390,7 +390,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom:65px;
   padding: 0;
 }
 .recommend-item {
@@ -432,6 +432,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  margin-top: 50px;
   margin-bottom: 57px;
 }
 .feature-item {
@@ -448,27 +449,35 @@ input[type="radio"].visually-hidden {
 }
 .feature {
   display: flex;
-
+  height: 256px;
 
 }
 .feature-img {
   width:66%;
+  overflow: hidden;
+
+
 }
 .feature-img img {
   width:100%;
+  margin-top:-8%;
+
 }
 
 
 .feature-text {
   width:33%;
   flex-grow:1;
+
 }
 .feature-text h2 {
-  padding: 45px 40px;
+  padding: 45px 60px;
+  padding-bottom: 30px;
   margin: 0;
 }
 .feature-text p {
-  padding: 45px 40px;
+padding: 45px 60px;
+padding-top: 30px;
   margin: 0;
 }
 
