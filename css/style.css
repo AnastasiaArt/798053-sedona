@@ -349,7 +349,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   position: relative;
   background-image: url("../img/sity-sedona.jpg");
-  background-position:center;
+  background-position:50% 30%;
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -459,27 +459,32 @@ input[type="radio"].visually-hidden {
 .feature {
   display: flex;
   height: 256px;
+  align-items: center;
 }
 .feature-img {
   width:66%;
+  height: inherit;
   overflow: hidden;
 }
 .feature-img img {
   width:100%;
-  margin-top:-8%;
+  margin: auto 0;
 }
 .feature-text {
   width:33%;
+  height: inherit;
   flex-grow:1;
+
 }
+
 .feature-text h2 {
-  padding: 45px 60px;
-  padding-bottom: 30px;
+  padding: 45px 10%;
+  padding-bottom: 20px;
   margin: 0;
 }
 .feature-text p {
-padding: 45px 60px;
-padding-top: 30px;
+padding: 45px 10%;
+padding-top: 20px;
   margin: 0;
 }
 .popupsearch {
@@ -493,6 +498,9 @@ padding-top: 30px;
   height: 395px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   margin: 0 auto;
+}
+.main-map img {
+  width: 100%;
 }
 .main-footer {
   display: flex;
