@@ -152,7 +152,6 @@ input[type="radio"].visually-hidden {
   font: inherit;
   background-color: #f2f2f2;
   border: none;
-  background-color: transparent;
 }
 .search-hotels-item input:hover {
   background-color: #ebebeb;
@@ -176,12 +175,12 @@ input[type="radio"].visually-hidden {
 .footer-social ul {
   list-style: none;
 }
-.footer-copyright .button:hover {
-    background-color: #81b3d2;
+/*.footer-copyright .button:hover {
+  background-color: #81b3d2;
 }
 .footer-copyright .button:focus {
   background-color: #bdbbbc;
-}
+}*/
 .filter {
   font: inherit;
   color: #ffffff;
@@ -511,7 +510,6 @@ padding-top: 20px;
 /* страница каталога*/
 .filters-form {
   margin: 0;
-  padding: 0;
   height: 218px;
   padding: 0 72px;
   display: flex;
@@ -565,7 +563,7 @@ padding-top: 20px;
   justify-content: flex-start;
   align-items: baseline;
   flex-wrap: wrap;
-  padding: 4px 72px;
+  padding: 0 72px;
   margin: 0;
   position: relative;
 }
@@ -610,14 +608,17 @@ padding-top: 20px;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  width: 100%;
+}
+.catalog-item {
+  padding: 30px 72px;
 }
 .hotel-card {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 30px 72px;
+
   align-items: flex-end;
+  position: relative;
 }
 .hotel-img {
   width: 135px;
@@ -626,19 +627,52 @@ padding-top: 20px;
 }
 .hotel-main-info {
   display:flex;
+  align-items: flex-end;
+  padding-top: 5px;
 }
 .hotel-container h3 {
   margin: 0;
+  padding: 0;
+  text-align: left;
 }
 .catalog-item-property {
   margin: 0;
-  padding: 10px 0;
+  padding: 14px 0;
+  text-align: left;
 }
 .catalog-item-button {
   margin: 0;
+
+
 }
 .catalog-item-button a {
   padding: 5px 16px;
+}
+.hotel-rating {
+  background-color: #f2f2f2;
+  padding: 5px 13px;
+  margin: 0;
+}
+.stars {
+  height: 17px;
+  background: rgba(255, 45, 82, 0.2);
+  box-shadow: 0 0 0 3px rgb(255, 45, 82);
+  background-color: #ffffff;
+  background-image: url("../img/star.svg");
+  background-position: right center;
+  background-repeat: round;
+  position: absolute;
+  right: 0;
+  top:0;
+}
+.stars2 {
+  width: 40px;
+}
+.stars3 {
+  width: 55px;
+}
+.stars4 {
+  width: 73px;
 }
 
 /*футер*/
@@ -677,6 +711,22 @@ padding-top: 20px;
 .social-button:active path {
   opacity: 0.3;
 }
+.footer-copyright  {
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
 .footer-copyright span {
-  display: block;
+  margin-right:  5px;
+}
+.button-html {
+  width: 115px;
+  height: 41px;
+}
+.button-html:hover path,
+.button-html:focus path {
+  fill:#81b3d2;
+}
+.button-html:active path {
+  fill:#bdbbbc;
 }
