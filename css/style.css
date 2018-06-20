@@ -192,9 +192,17 @@ input[type="radio"].visually-hidden {
 .filter {
   font: inherit;
   color: #ffffff;
+  height: 218px;
+  width: inherit;
+
+  margin: 0;
+  padding: 0 72px;
+  position: relative;
   background-color: #355061;
   background-image: url("../img/backgroundSedona.jpg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position:50% 30%;
 }
 .filters-form  legend {
   font-size: 16px;
@@ -234,7 +242,9 @@ input[type="radio"].visually-hidden {
 }
 .catalog-sort h2 {
   color:#000000;
-
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 .sort-list {
@@ -311,7 +321,7 @@ input[type="radio"].visually-hidden {
 .main-header {
  position: relative;
  padding: 0;
- height: 56px;
+height: 56px;
  margin: 0;
 }
 .main-header-logo {
@@ -327,22 +337,27 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0;
   margin: 0;
   flex-wrap: wrap;
+  align-items: center;
 }
 .site-navigation li {
   width:20%;
   margin: 0;
-  padding: 22px 0;
+  padding:  15px 0;
+  text-align: center;
   }
 .site-navigation li:nth-child(2) {
   margin-right: auto;
+
 }
 .site-navigation li:nth-child(3){
   margin-left: auto;
+
 }
+
 
 .main-image {
   height: 512px;
@@ -502,6 +517,102 @@ padding-top: 20px;
 .main-map img {
   width: 100%;
 }
+/* страница каталога*/
+.filters-form {
+  margin: 0;
+  padding: 0;
+  height: 218px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filters-form ul {
+
+  padding: 0;
+  margin: 0;
+}
+.filters-form fieldset {
+  margin: 0;
+  padding: 0;
+}
+.filters-form legend {
+
+  margin-bottom: 16px;
+}
+.filter-option {
+  margin-bottom: 19px;
+  text-align: left;
+  padding-left:40px;
+}
+.filter-option label {
+  position: relative;
+  display: block;
+}
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: -42px;
+  top: 0;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top:0;
+  left: -42px;
+  width: 27px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.catalog-sort {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: 4px 72px;
+  margin: 0;
+  position: relative;
+  background: rgba(0, 128, 0, 0.2);
+  box-shadow: 0 0 0 3px green;
+
+}
+.catalog-sort p {
+  margin-right: 45px;
+}
+.catalog-sort h2 {
+  margin-right: 35px;
+}
+.sort-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+ }
+ .sort-list li {
+   margin-right: 30px;
+
+ }
+ .sort-up-down {
+   position: absolute;
+   right: 72px;
+   top: 50%;
+   transform: translate(0, -50%);
+   background: rgba(0, 128, 0, 0.2);
+   box-shadow: 0 0 0 3px green;
+ }
+.button-up {
+  margin-right: 12px;
+}
+/*футер*/
 .main-footer {
   display: flex;
   justify-content: space-around;
@@ -536,4 +647,7 @@ padding-top: 20px;
 }
 .social-button:active path {
   opacity: 0.3;
+}
+.footer-copyright span {
+  display: block;
 }
