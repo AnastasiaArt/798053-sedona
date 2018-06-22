@@ -18,7 +18,7 @@
             <li><a href="info.html">Информация</a></li>
             <li><a href="fhoto.html">Фото и видео</a></li>
             <li><a href="index.html#map">Карта штата</a></li>
-            <li class="site-navigation-current"><a href="catalog.html">Гостиницы</a></li>
+            <li class="site-navigation-current"><a  href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
       </header>
@@ -63,15 +63,22 @@
             </fieldset>
             <fieldset>
               <legend>Стоимость в сутки (Р):</legend>
-              <p class="filter-price">
-                <label for="filter-range-start"> от  0</label>
-                <span class="stick"></span>
-                <label for="filter-range-finish">до 3000</label>
-                <input type="range" class="filter-price-range" name="radio" id="filter-range-start" min="0" max="1499" step="1">
-                <input type="range" class="filter-price-range" name="radio" id="filter-range-finish" min="1500" max="3000" step="1">
-              </p>
+              <div class="filter-price">
+                <label class="min-price">от<input type="text" name="min-price" value="0">
+                </label>
+                <label class="max-price">до<input type="text" name="max-price" value="3000">
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                    <div class="bar"></div>
+                </div>
+                <div class="price-range price-range-min" ></div>
+                <div class="price-range price-range-max" ></div>
+                </div>
+                <button type="submit" class="filter-button">Показать</button>
             </fieldset>
-            <button type="submit" class="filter-button">Показать</button>
+
           </form>
         </section>
         <section class="catalog-sort">
