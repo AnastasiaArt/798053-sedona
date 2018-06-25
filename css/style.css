@@ -9,6 +9,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   background-color: #ffffff;
+    width: 100%;
 }
 a {
   text-decoration: none;
@@ -39,7 +40,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
   max-width: 1200px;
   min-width: 768px;
-  width: 100%;
+
 }
 .main-header {
  position: relative;
@@ -67,8 +68,8 @@ input[type="radio"].visually-hidden {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  padding: 0 6%;
-  margin: 0;
+  padding: 0 ;
+  margin: 0 6%;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -76,13 +77,21 @@ input[type="radio"].visually-hidden {
   width:20%;
   margin: 0;
   padding:  15px 0;
-  text-align: center;
+
+  }
+.site-navigation li:first-child {
+    text-align: left;
   }
 .site-navigation li:nth-child(2) {
   margin-right: auto;
+  text-align: left;
 }
-.site-navigation li:nth-child(3){
+.site-navigation li:nth-child(3) {
   margin-left: auto;
+  text-align: right;
+}
+.site-navigation li:last-child {
+  text-align: right;
 }
 
 .site-navigation a {
@@ -173,6 +182,7 @@ input[type="radio"].visually-hidden {
   width: 33%;
   padding: 0 60px;
   margin-top: 50px;
+
 }
 .feature-item h2 {
   width: 50%;
@@ -188,12 +198,14 @@ input[type="radio"].visually-hidden {
 }
 .feature {
   display: flex;
-  height: 256px;
+  width: 100%;
   align-items: center;
+  background-color: #ffffff;
+  padding: 0;
+  margin: 0;
 }
 .feature-img {
   width:66%;
-  height: inherit;
   overflow: hidden;
 }
 .feature-img img {
@@ -205,8 +217,7 @@ input[type="radio"].visually-hidden {
   background-color: #81b3d2;
   text-align: center;
   width:33%;
-  height: inherit;
-  flex-grow:1;
+  
 }
 .feature-text h2 {
   font-size: 21px;
@@ -414,24 +425,24 @@ input[type="radio"].visually-hidden {
 .button-html:active path {
   fill:#bdbbbc;
 }
-
-.filter {
-  font: inherit;
-  color: #ffffff;
-
+.filters-form {
   width: 100%;
-
   margin: 0;
-  padding: 0;
   position: relative;
-background-color: #355061;
+  background-color: #355061;
   background-image: url("../img/backgroundSedona.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position:50% 30%;
-}
-.filters-form {
+
   font:  inherit;
+  color: #ffffff;
+  padding: 30px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 .filters-form  legend {
   font-size: 16px;
@@ -439,9 +450,23 @@ background-color: #355061;
 }
 .filters-form ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+
 }
 .filters-form fieldset {
   border: none;
+  max-width: 22%;
+  margin: 0;
+  margin-left: 72px;
+  padding: 0;
+
+}
+.filters-form fieldset:nth-child(3) {
+   max-width: 330px;
+
+  margin-left: auto;
+  margin-right: 72px;
 }
 .filter-form label {
   display: inline-block;
@@ -454,126 +479,20 @@ background-color: #355061;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
+  text-transform: uppercase;
   border: 2px solid #ffffff;
   background-color: transparent;
+  border-radius: 2px;
+  cursor: pointer;
+  color:#ffffff;
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
 }
 .filter-button:hover,
 .filter-button:focus {
   color:#000000;
   background-color:#ffffff;
-}
-.catalog-sort {
-  font-size: 12px;
-  line-height: 18px;
-}
-.catalog-sort-sum {
-  color: #000000;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-.catalog-sort h2 {
-  color:#000000;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-}
-.sort-list {
-  list-style: none;
-}
-.sort-item a {
-  opacity: 0.3;
-  color: #000000;
-  border-bottom: 1px dotted #81b3d2;
-}
-.sort-item .sort-item-current {
-  color: #81b3d2;
-  border-bottom: 0;
-  opacity: 1;
-}
-.sort-item .sort-item-current:hover {
-  border-bottom: 1px dotted #81b3d2;
-}
-.sort-item a:hover,
-.sort-item a:focus {
-  color: #81b3d2;
-  opacity: 1;
-}
-.sort-item .sort-item-current:active,
-.sort-item a:active {
-  border-bottom: 0;
-  color: #000000;
-  opacity: 1;
-}
-.catalog-list {
-    list-style: none;
-}
-.hotel-card h3 a {
-  color: #000000;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-.button-info,
-.button-book {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 21px;
-  text-align: center;
-  color: #ffffff;
-  border: none;
-  text-transform: uppercase;
-}
-.button-info {
-  background-color: #81b3d2;
-}
-.button-info:hover,
-.button-info:focus {
-  background-color: #669ec0;
-}
-.button-info:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #5496bd;
-}
-.button-book {
-  background-color: #766357;
-}
-.button-book:hover,
-.button-book:focus {
-  background-color: #604e43;
-}
-.button-book:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #503e33;
-}
-/*сеточные стили*/
-/* страница каталога*/
-.filter {
-  padding: 30px 0;
-}
-.filters-form {
-  padding: 0 72px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.filters-form ul {
-  padding: 0;
-  margin: 0;
-}
-.filters-form fieldset {
-  margin: 0;
-  margin-right: 6%;
-  padding: 0;
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
-}
-.filters-form fieldset:nth-child(3) {
-   width: 330px;
-  margin-left: auto;
-  margin-right: 0;
 }
 .filters-form legend {
   margin-bottom: 16px;
@@ -682,25 +601,94 @@ background-color: #355061;
   background: none;
   border: none;
 }
-.filter-button {
-  display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
-
-  font-size: 14px;
-  line-height: 20px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  background: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 2px;
-  cursor: pointer;
+.catalog-sort {
+  font-size: 12px;
+  line-height: 18px;
 }
-.filter-button:hover {
+.catalog-sort-sum {
   color: #000000;
-  background: #ffffff;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
 }
+.catalog-sort h2 {
+  color:#000000;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.sort-list {
+  list-style: none;
+}
+.sort-item a {
+  opacity: 0.3;
+  color: #000000;
+  border-bottom: 1px dotted #81b3d2;
+}
+.sort-item .sort-item-current {
+  color: #81b3d2;
+  border-bottom: 0;
+  opacity: 1;
+}
+.sort-item .sort-item-current:hover {
+  border-bottom: 1px dotted #81b3d2;
+}
+.sort-item a:hover,
+.sort-item a:focus {
+  color: #81b3d2;
+  opacity: 1;
+}
+.sort-item .sort-item-current:active,
+.sort-item a:active {
+  border-bottom: 0;
+  color: #000000;
+  opacity: 1;
+}
+.catalog-list {
+    list-style: none;
+}
+.hotel-card h3 a {
+  color: #000000;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+.button-info,
+.button-book {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+}
+.button-info {
+  background-color: #81b3d2;
+}
+.button-info:hover,
+.button-info:focus {
+  background-color: #669ec0;
+}
+.button-info:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+.button-book {
+  background-color: #766357;
+}
+.button-book:hover,
+.button-book:focus {
+  background-color: #604e43;
+}
+.button-book:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+/*сеточные стили*/
+/* страница каталога*/
 .catalog-sort {
   display: flex;
   justify-content: flex-start;
@@ -759,12 +747,12 @@ background-color: #355061;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   align-items: flex-end;
   position: relative;
 }
 .hotel-img {
   width: 135px;
+  min-width: 135px;
   height: 90px;
   margin-right: 30px;
 }
@@ -772,16 +760,22 @@ background-color: #355061;
   display:flex;
   align-items: flex-end;
   padding-top: 5px;
+
 }
-.hotel-container h3 {
+.hotel-container {
+  text-align: left;
+
+
+}
+ .hotel-container h3 {
   margin: 0;
   padding: 0;
-  text-align: left;
+
 }
 .catalog-item-property {
   margin: 0;
   padding: 14px 0;
-  text-align: left;
+
 }
 .catalog-item-button {
   margin: 0;
