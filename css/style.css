@@ -144,6 +144,8 @@ input[type="radio"].visually-hidden {
   z-index: 2;
 }
 .about-sedona {
+  text-align: center;
+  line-height: 26px;
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 53px;
@@ -155,14 +157,9 @@ input[type="radio"].visually-hidden {
   color: #000000;
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
-  text-align: center;
+
   background-color: #ffffff;
   margin-bottom: 27px;
-}
-.about-sedona p {
-  line-height: 26px;
-  text-align: center;
 }
 .feature {
   display: flex;
@@ -171,6 +168,7 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   padding: 0;
   margin: 0;
+
 }
 .feature-img-town {
   width:66%;
@@ -190,7 +188,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/bridge.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position:50% 55%;
+  background-position:50% 53%;
   flex-grow: 2;
 }
 .feature-text {
@@ -209,9 +207,14 @@ input[type="radio"].visually-hidden {
   width: 50%;
 
 }
-.feature-text p {
-  padding: 45px 10%;
-  padding-top: 20px;
+.feature-text-city {
+  padding: 45px 55px;
+  padding-top: 22px;
+  margin: 0;
+}
+.feature-text-bridge {
+  padding: 45px 45px;
+  padding-top: 22px;
   margin: 0;
 }
 .features-list {
@@ -219,26 +222,25 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0;
   padding: 0;
-  margin-bottom: 54px;
-  align-items: center;
-  height: 256px;
+  padding-top: 46px;
+  padding-bottom: 40px;
+  margin-bottom: 56px;
 }
 .feature-item {
   text-align: center;
   width: 33%;
   padding: 0 60px;
-  margin-top: 50px;
-
 }
 .feature-item h2 {
   width: 50%;
   margin:0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 .feature-item p {
-  margin:26px auto;
+  margin:20px 0;
 }
 
 .feature-item h2,
@@ -252,18 +254,20 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom:65px;
+  margin-bottom:68px;
   padding: 0;
+  margin-top: 49px;
 }
 .recommend-item {
   text-align: center;
   width: 33%;
-  padding:0 80px;
+  padding:0 55px;
 }
 .recommend-item h3 {
   position: relative;
   margin: 0;
-  margin-top: 160px;
+  padding-top: 110px;
+  margin-bottom: 24px;
 }
 .recommend-item h3::before {
   content: "";
@@ -291,7 +295,6 @@ input[type="radio"].visually-hidden {
 .search-hotels {
   line-height: 24px;
   text-align: center;
-  margin: 0 auto;
   padding: 0 10px;
   position: relative;
 
@@ -300,9 +303,13 @@ input[type="radio"].visually-hidden {
   color: #000000;
   font-size: 30px;
   font-weight: 700;
+  margin: 0;
+  margin-bottom: 30px;
+
 }
 .popupsearch,
 .search {
+  font: inherit;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -316,8 +323,9 @@ input[type="radio"].visually-hidden {
   display: inline-block;
   vertical-align: top;
   width: 568px;
-  padding-top: 35px;
-  padding-bottom: 33px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 33px;
 }
 .popupsearch:hover,
 .popupsearch:focus {
@@ -330,7 +338,7 @@ input[type="radio"].visually-hidden {
 .search {
   width: 458px;
   background-color: #81b3d2;
-  padding: 17px 0;
+  padding: 16px 0;
 }
 .search:hover,
 .search:focus {
@@ -372,7 +380,7 @@ input[type="radio"].visually-hidden {
 }
 .search-hotels-form fieldset {
   margin:0;
-  padding: 55px;
+  padding: 39px 55px;
   border: none;
 }
 .search-hotels-item {
@@ -380,7 +388,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -391,14 +399,15 @@ input[type="radio"].visually-hidden {
   color: #000000;
   background-color: #f2f2f2;
   border: 2px solid transparent;
-  padding: 8px;
+  padding: 5px;
+  padding-left: 10px;
   padding-right: 50px;
   width: 346px;
   box-sizing: border-box;
 }
 .сalendar {
   position: absolute;
-  right: 9px;
+  right: 4px;
   top:8px;
   fill:#cacaca;
   border: 0;
@@ -420,6 +429,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 55px;
+
 }
 .input-container input {
   font: inherit;
@@ -454,7 +464,8 @@ input[type="radio"].visually-hidden {
   width: 12px;
   height: 3px;
   position: absolute;
-  right: 10px;
+  right: 13px;
+  left:13px;
   background-color: #cacaca;
 }
 .button-plus::before {
@@ -501,10 +512,9 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
-  margin: 36px 0;
+  padding:36px 0px;
 }
 .main-footer p {
   font-size: 14px;
