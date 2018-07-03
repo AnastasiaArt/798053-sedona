@@ -512,6 +512,7 @@ input[type="radio"].visually-hidden {
   bottom: 0;
   z-index: 4;
   padding: 0;
+  left:0;
 }
 .main-footer {
   color: #000000;
@@ -521,18 +522,21 @@ input[type="radio"].visually-hidden {
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: space-around;
+
   align-items: center;
   padding:15px 0;
   width: 100%;
 }
 .main-footer span {
-  width:30%;
+  width: 33%;
   padding-bottom: 4px;
   text-align: center;
-  margin-left: -5px;
 }
 .footer-social {
-  width: 30%;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+
 }
 .social-button {
   width: 46px;
@@ -551,7 +555,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-left: 89px;
+  padding: 0;
 }
 .social-button:hover,
 .social-button:focus {
@@ -569,16 +573,20 @@ input[type="radio"].visually-hidden {
   line-height: 26px;
   display: flex;
   align-items: center;
-  width: 27%;
+  width: 33%;
   padding: 0;
   margin: 0;
+  justify-content: center;
 }
 .footer-copyright span {
-  padding-left: 45px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8px;
 }
 .button-html {
   width: 115px;
   height: 41px;
+  margin-right: 52px;
 }
 .button-html:hover path,
 .button-html:focus path {
@@ -606,7 +614,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  flex-wrap: wrap;
   text-align: left;
 }
 .filters-form  legend {
