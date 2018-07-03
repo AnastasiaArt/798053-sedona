@@ -423,6 +423,9 @@ input[type="radio"].visually-hidden {
   align-items: center;
   margin-bottom: 55px;
 }
+.number-child {
+  margin-right: -20px;
+}
 .input-container input {
   font: inherit;
   color: #000000;
@@ -438,10 +441,10 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .button-plus,
 .button-minus  {
-  position: relative;
   width: 38px;
   height: 38px;
   background-color: #f2f2f2;
@@ -449,15 +452,22 @@ input[type="radio"].visually-hidden {
   padding: 0;
   border: 0;
 }
-.button-plus::before,
-.button-plus::after,
 .button-minus::before{
   content: "";
   width: 12px;
   height: 3px;
   position: absolute;
-  right: 13px;
-  left:13px;
+  left:14px;
+  background-color: #cacaca;
+}
+.button-plus::before,
+.button-plus::after {
+  content: "";
+  width: 12px;
+  height: 3px;
+  position: absolute;
+  left:90px;
+  right: 101px;
   background-color: #cacaca;
 }
 .button-plus::before {
