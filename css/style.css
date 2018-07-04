@@ -170,7 +170,7 @@ input[type="radio"].visually-hidden {
 .feature-img-town {
   width:66%;
   min-height: 256px;
-  background-color: #758ba0;
+  background-color: #81b3d2;
   background-image: url("../img/town.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -181,7 +181,7 @@ input[type="radio"].visually-hidden {
   width:66%;
   min-height: 256px;
   position: relative;
-  background-color: #758ba0;
+  background-color: #81b3d2;
   background-image: url("../img/bridge.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
