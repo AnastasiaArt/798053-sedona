@@ -358,6 +358,7 @@ input[type="radio"].visually-hidden {
   width: 568px;
   min-height: 395px;
   background-color: #ffffff;
+  -webkit-box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   margin: 0 auto;
   position: absolute;
@@ -369,6 +370,7 @@ input[type="radio"].visually-hidden {
 }
 .modal-show {
   display: block;
+   -webkit-animation: bounce 0.6s;
   animation: bounce 0.6s;
 }
 .search-hotels-form fieldset {
@@ -383,8 +385,14 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   margin-bottom: 28px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
   align-items: baseline;
 }
 .search-hotels-item input {
@@ -396,6 +404,7 @@ input[type="radio"].visually-hidden {
   padding-left: 10px;
   padding-right: 50px;
   width: 346px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 .сalendar {
@@ -418,8 +427,14 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+     -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
   align-items: center;
   margin-bottom: 55px;
 }
@@ -434,12 +449,19 @@ input[type="radio"].visually-hidden {
   padding: 6px 0;
   width: 38px;
   margin: 0;
+   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-align: center;
 }
 .input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
   align-items: center;
   position: relative;
 }
@@ -471,6 +493,8 @@ input[type="radio"].visually-hidden {
   background-color: #cacaca;
 }
 .button-plus::before {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
 .button-plus:hover::before,
