@@ -1,39 +1,49 @@
   var link = document.querySelector(".popupsearch");
   var popup = document.querySelector(".search-hotels-form");
   var arrival = popup.querySelector("[name=data-in]");
+  var departure = popup.querySelector("[name=data-out]");
   var isStorageSupport = true;
   var storage = "";
-
   try {
-  storage = localStorage.getItem("data-in");
-  } catch (err) {
-  isStorageSupport = false;
-  }
-  link.addEventListener("click", function (evt) {
-    if (!popup.classList.contains("modal-show")){
-    evt.preventDefault();
-          popup.classList.add("modal-show");
-    if (storage) {
-    arrival.value = storage;
-  }
-  }else {
-    popup.classList.remove("modal-show");
-  }
-    arrival.focus();
-  });
-  popup.addEventListener("submit", function (evt) {
-    if (!arrival.value) {
-    evt.preventDefault();
-    console.log("Нужно ввести дату заезда");
-  } else {
-    localStorage.setItem("data-in", arrival.value);
-  }
-  });
-  window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (popup.classList.contains("modal-show")) {
-      popup.classList.remove("modal-show");
+    storage = localStorage.getItem("data-in");
+    } catch (err) {
+    isStorageSupport = false;
     }
-  }
-  });
+    // popup = popup.classList.add("modal-close");
+
+    link.addEventListener("click", function (evt) {
+      if (!popup.classList.contains("modal-show")){
+      evt.preventDefault();
+            popup.classList.remove("modal-close");
+            popup.classList.add("modal-show");
+      if (storage) {
+      arrival.value = storage;
+    }
+    }else {
+      popup.classList.remove("modal-show");
+      popup.classList.add("modal-close");
+      popup.classList.remove("modal-error");
+    }
+      arrival.focus();
+    });
+    popup.addEventListener("submit", function (evt) {
+      if (!arrival.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+      console.log("Нужно ввести дату заезда");
+    } else {
+      localStorage.setItem("data-in", arrival.value);
+    }
+    });
+    window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
+        popup.classList.add("modal-close");
+        popup.classList.remove("modal-error");
+      }
+    }
+    });
