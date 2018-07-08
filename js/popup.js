@@ -10,36 +10,37 @@
     } catch (err) {
     isStorageSupport = false;
     }
-      link.addEventListener("click", function (evt) {
-        if (!popup.classList.contains("modal-show")){
-        evt.preventDefault();
-              popup.classList.add("modal-show");
-        if (storage) {
+
+  link.addEventListener("click", function (evt) {
+    if (!popup.classList.contains("modal-show")){
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+      if (storage) {
         arrival.value = storage;
       }
-      }else {
+    }else {
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
+    }
+      arrival.focus();
+  });
+  popup.addEventListener("submit", function (evt) {
+    if (!arrival.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+      console.log("Нужно ввести дату заезда");
+    } else {
+      localStorage.setItem("data-in", arrival.value);
+    }
+  });
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      evt.preventDefault();
+      if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
         popup.classList.remove("modal-error");
       }
-        arrival.focus();
-      });
-      popup.addEventListener("submit", function (evt) {
-        if (!arrival.value) {
-        evt.preventDefault();
-        popup.classList.remove("modal-error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("modal-error");
-        console.log("Нужно ввести дату заезда");
-      } else {
-        localStorage.setItem("data-in", arrival.value);
-      }
-      });
-      window.addEventListener("keydown", function (evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (popup.classList.contains("modal-show")) {
-          popup.classList.remove("modal-show");
-          popup.classList.remove("modal-error");
-        }
-      }
-      });
+    }
+  });
