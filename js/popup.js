@@ -9,19 +9,16 @@
     } catch (err) {
     isStorageSupport = false;
     }
-    // popup = popup.classList.add("modal-close");
 
     link.addEventListener("click", function (evt) {
       if (!popup.classList.contains("modal-show")){
       evt.preventDefault();
-            popup.classList.remove("modal-close");
             popup.classList.add("modal-show");
       if (storage) {
       arrival.value = storage;
     }
     }else {
       popup.classList.remove("modal-show");
-      popup.classList.add("modal-close");
       popup.classList.remove("modal-error");
     }
       arrival.focus();
@@ -42,7 +39,6 @@
       evt.preventDefault();
       if (popup.classList.contains("modal-show")) {
         popup.classList.remove("modal-show");
-        popup.classList.add("modal-close");
         popup.classList.remove("modal-error");
       }
     }
