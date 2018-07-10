@@ -49,7 +49,7 @@ input[type="radio"].visually-hidden {
   width: 138px;
   height: 70px;
   position: absolute;
-  top:0%;
+  top: 0;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, 0%);
@@ -65,7 +65,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   display: flex;
   justify-content: space-around;
-  padding: 0 ;
+  padding: 0;
   margin: 0 72px;
   flex-wrap: wrap;
   align-items: center;
@@ -506,7 +506,7 @@ input[type="radio"].visually-hidden {
   width: 12px;
   height: 3px;
   position: absolute;
-  left:14px;
+  left: 14px;
   background-color: #cacaca;
 }
 .button-plus::before,
@@ -515,7 +515,7 @@ input[type="radio"].visually-hidden {
   width: 12px;
   height: 3px;
   position: absolute;
-  left:90px;
+  left: 90px;
   right: 101px;
   background-color: #cacaca;
 }
@@ -530,7 +530,7 @@ input[type="radio"].visually-hidden {
 .button-plus:focus::before,
 .button-plus:focus::after,
 .button-minus:focus::before  {
-  background-color:#000000;
+  background-color: #000000;
 }
 .button-plus:active::before,
 .button-plus:active::after,
@@ -558,9 +558,10 @@ input[type="radio"].visually-hidden {
 .main-map img {
   width: 100%;
   position: absolute;
-  /* top:0; */
-  z-index: 2;
-  transform: translate(-50%, 0%);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
 }
 /*футер*/
 .main-footer-absolute{
@@ -656,10 +657,10 @@ input[type="radio"].visually-hidden {
   margin: 0;
   position: relative;
   background-color: #355061;
-  background-image: url("../img/backgroundsedona.jpg");
+  background-image: url("../img/imgsedonahotels.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position:50% 30%;
+  background-position:50% 50%;
   font:  inherit;
   color: #ffffff;
   padding:0;
